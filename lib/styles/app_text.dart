@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:watt/styles/app_colors.dart';
 
 class AppText {
   static const header1 = TextStyle(
@@ -22,7 +23,7 @@ class AppText {
     fontSize: 16,
     fontWeight: FontWeight.w400,
   );
-   static const body1 = TextStyle(
+  static const body1 = TextStyle(
     fontSize: 14,
     fontWeight: FontWeight.w500,
   );
@@ -31,5 +32,9 @@ class AppText {
     fontWeight: FontWeight.w400,
   );
 
-
+  static const titles = TextStyle(
+    fontSize: 30,
+    fontWeight: FontWeight.bold,
+    color: Colors.black,
+  );
 }

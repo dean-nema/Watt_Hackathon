@@ -6,8 +6,10 @@ class AppColors {
   static const fontColor2 = Color(0xff373737);
   static const disableFont = Color(0xffA7A7A7);
   static const disableButton = Color(0xff303030);
-  static const background = Color(0xff1A2947);
+  static const background = Color.fromARGB(255, 1, 7, 19);
   static const black = Color(0xff000000);
   static const white = Color(0xffffffff);
-  static final fieldColor = const Color.fromARGB(255, 111, 9, 136).withOpacity(0.3);
+  static final fieldColor =
+      const Color.fromARGB(255, 111, 9, 136).withOpacity(0.3);
+  static final titleText =  Color.fromARGB(255, 34, 1, 88);
 }

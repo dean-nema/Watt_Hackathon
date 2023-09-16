@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:watt/components/button_navigation_items.dart';
 import 'package:watt/config/app_icons.dart';
+import 'package:watt/pages/add.dart';
 import 'package:watt/pages/home.dart';
 import 'package:watt/styles/app_colors.dart';
 
@@ -33,7 +34,7 @@ class _MainPageState extends State<MainPage> {
   final pages = [
     HomePage(),
     Center(child: Text("Favorite")),
-    Center(child: Text("Add Post")),
+    AddPage(),
     Center(child: Text("Messages")),
   //  ProfilePage(),
   ];

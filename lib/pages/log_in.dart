@@ -33,7 +33,7 @@ class LoginPage extends StatelessWidget {
                     ),
                   ),
                   SizedBox(
-                    height: 30,
+                    height: 20,
                   ),
                   const Text(
                     "Log in to continue",
@@ -92,7 +92,7 @@ class LoginPage extends StatelessWidget {
                     child: ElevatedButton(
                         onPressed: () {
                           Navigator.of(context)
-                              .pushReplacementNamed(AppRoutes.home);
+                              .pushReplacementNamed(AppRoutes.main);
                         },
                         style: ElevatedButton.styleFrom(
                           backgroundColor: Colors.amber,
