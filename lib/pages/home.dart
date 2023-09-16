@@ -10,12 +10,12 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       appBar: Toolbar(title: "Watt"),
       body: Container(
-        decoration: const BoxDecoration(
-          color:Colors.grey,
-        //   image: DecorationImage(
-        //       image: AssetImage("assets/images/wallpaper.jpg"),
-        //       fit: BoxFit.cover),
-        ),
+        decoration:  BoxDecoration(
+         color:Colors.amber.withOpacity(0.3),
+        //  image: DecorationImage(
+           //   image: AssetImage("assets/images/wallpaper.jpg"),
+         //     fit: BoxFit.cover),
+       ),
         child: ListView.separated(
           itemBuilder: (context, index) {
             mockData();

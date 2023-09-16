@@ -28,7 +28,7 @@ class DataDisplay extends StatelessWidget {
             ),
             child: Container(
                 decoration: BoxDecoration(
-                  border: Border.all(color: Colors.white, width: 3),
+                  border: Border.all(color: Colors.blue, width: 3),
                   borderRadius: BorderRadius.all(Radius.circular(20)),
                 ),
                 width: 50,

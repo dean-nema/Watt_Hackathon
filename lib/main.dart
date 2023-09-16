@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       theme: ThemeData(
         fontFamily: 'Urbanist',
-         scaffoldBackgroundColor: Colors.white.withOpacity(0.7),
+         scaffoldBackgroundColor: Colors.amber.withOpacity(0.5),
         brightness: Brightness.dark,
       ),
       initialRoute: AppRoutes.login,

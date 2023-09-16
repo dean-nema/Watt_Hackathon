@@ -35,6 +35,6 @@ class AppText {
   static const titles = TextStyle(
     fontSize: 30,
     fontWeight: FontWeight.bold,
-    color: Colors.black,
+    color: Colors.blue,
   );
 }
