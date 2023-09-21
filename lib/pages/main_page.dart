@@ -1,10 +1,11 @@
-
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:watt/components/button_navigation_items.dart';
 import 'package:watt/config/app_icons.dart';
 import 'package:watt/pages/add.dart';
 import 'package:watt/pages/home.dart';
+import 'package:watt/pages/notfications.dart';
+import 'package:watt/pages/profile.dart';
 import 'package:watt/styles/app_colors.dart';
 
 class MainPage extends StatefulWidget {
@@ -35,8 +36,8 @@ class _MainPageState extends State<MainPage> {
     HomePage(),
     Center(child: Text("Favorite")),
     AddPage(),
-    Center(child: Text("Messages")),
-  //  ProfilePage(),
+    NotfPage(messageText: "Dean Is Amazing",),
+    ProfilePage(),
   ];
 }
 

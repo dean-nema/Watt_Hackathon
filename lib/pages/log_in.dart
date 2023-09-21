@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:watt/config/app_routes.dart';
 import 'package:watt/config/app_icons.dart';
+import 'package:watt/pages/home.dart';
 
 class LoginPage extends StatelessWidget {
   const LoginPage({super.key});
@@ -60,6 +61,8 @@ class LoginPage extends StatelessWidget {
                     height: 16,
                   ),
                   TextField(
+                    obscureText: true,
+                    obscuringCharacter: "*",
                     decoration: InputDecoration(
                       hintText: 'Password',
                       hintStyle: TextStyle(
@@ -198,3 +201,11 @@ class LoginPage extends StatelessWidget {
     );
   }
 }
+
+class Users {
+  String? userName;
+  String? password;
+  Users({required this.userName, required this.password});
+}
+
+Users Natalia = new Users(userName: 'Natalia', password: '1234');

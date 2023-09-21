@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "814039450376",
+    "project_id": "watt-deanisamazing",
+    "storage_bucket": "watt-deanisamazing.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:814039450376:android:954961bba93f98271ca2bd",
+        "android_client_info": {
+          "package_name": "com.example.watt"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC6WdY-s4m2v4WywyytRT4ie7Viey_r5NI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
