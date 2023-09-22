@@ -41,6 +41,11 @@ class AppText {
   static const details = TextStyle(
     fontSize: 20,
     fontWeight: FontWeight.bold,
+    color: Colors.black,
+  );
+  static const details2 = TextStyle(
+    fontSize: 20,
+    fontWeight: FontWeight.bold,
     color: Colors.white,
   );
 }

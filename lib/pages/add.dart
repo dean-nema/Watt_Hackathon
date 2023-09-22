@@ -51,7 +51,7 @@ class _AddPageState extends State<AddPage> {
                           fontWeight: FontWeight.bold),
                       textAlign: TextAlign.center,
                       decoration: InputDecoration(
-                        filled: true,
+                        filled: false,
                         fillColor: Colors.white,
                         // hintText: hint,
                         // hintStyle: TextStyle(
@@ -71,9 +71,8 @@ class _AddPageState extends State<AddPage> {
                         suffixIcon: IconButton(
                             onPressed: () => txtController.clear(),
                             icon: Icon(Icons.clear)),
-                           
                       ),
-                       maxLength: 14,
+                      maxLength: 14,
                       keyboardType: TextInputType.phone,
                     ),
                     // TextField(
@@ -118,14 +117,17 @@ class _AddPageState extends State<AddPage> {
                               setState(() {
                                 first.data = first.data! + 100;
                                 second.data = 100;
+                                second.amount = 50;
+                                fourth.data = fourth.data! + 12;
                                 messages.add(ChatMessage(
-                                    messageContent:
-                                        "You have topped up 100 units successfully you now have ${first.data}",
-                                    messageTime: "18:31", importance: "one"));
-                            });
-                              }
-                              txtController.clear();
-                            
+                                  messageContent:
+                                      "You have topped up 100 units successfully you now have ${first.data}",
+                                  messageTime: "18:31",
+                                  importance: "one",
+                                ));
+                              });
+                            }
+                            txtController.clear();
                           },
                           color: Colors.white,
                           child: const Text(

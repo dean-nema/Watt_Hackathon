@@ -17,7 +17,7 @@ class _NotfPageState extends State<NotfPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: Toolbar(title: "Notfication"),
+        appBar: Toolbar(title: "Notification"),
         body: SingleChildScrollView(
           child: Container(
             height: MediaQuery.of(context).size.height,

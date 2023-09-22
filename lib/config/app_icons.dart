@@ -4,7 +4,7 @@ class AppIcons {
   static const  wallpaper = 'assets/images/wallpaper.jpg';
   static const location = '../assets/svg/location.svg';
   static const home = '../assets/svg/home.svg';
-  static const favourites = '../assets/svg/heart.svg';
+  static const purchase = '../assets/svg/credit.svg';
   static const addPost = '../assets/svg/add.svg';
   static const messages = '../assets/svg/messages.svg';
   static const profile = '../assets/svg/profile.svg';

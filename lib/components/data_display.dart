@@ -5,7 +5,9 @@ class DataDisplay extends StatelessWidget {
   final int? data;
   final String? units;
   final String? title;
-  const DataDisplay({super.key, required this.data, this.units, required this.title});
+  final int? amount;
+  const DataDisplay(
+      {super.key, required this.data, this.units, required this.title, this.amount});
 
   @override
   Widget build(BuildContext context) {
@@ -16,8 +18,10 @@ class DataDisplay extends StatelessWidget {
           SizedBox(
             height: 10,
           ),
-          Text(title!,
-          style: AppText.titles,),
+          Text(
+            title!,
+            style: AppText.titles,
+          ),
           Container(
             //margin: EdgeInsets.all(50),
             height: 80,
@@ -39,13 +43,37 @@ class DataDisplay extends StatelessWidget {
                     borderRadius: BorderRadius.all(Radius.circular(20)),
                   ),
                   child: Center(
-                    child: Text(
+                   
+                    child: (amount == null ? Text(
                       "$data $units",
                       style: TextStyle(
                           fontSize: 40,
-                           color: Colors.green,
-                           fontWeight: FontWeight.bold),
-                    ),
+                          color: Colors.green,
+                          fontWeight: FontWeight.bold),
+                    ) : Row(
+                          children: [
+                            Expanded(
+                              flex: 2,
+                      child: Text(
+                      "$data $units",
+                      style: TextStyle(
+                          fontSize: 40,
+                          color: Colors.green,
+                          fontWeight: FontWeight.bold),
+                          ),
+                          ),
+                        Expanded(
+                          flex: 1,
+                          child: Text(
+                      "P$amount",
+                      style: TextStyle(
+                          fontSize: 40,
+                          color: Colors.blue,
+                          fontWeight: FontWeight.bold),
+                          )
+                        ),
+                          ],
+                    ))
                   ),
                 )),
           ),

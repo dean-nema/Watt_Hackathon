@@ -6,6 +6,7 @@ import 'package:watt/pages/add.dart';
 import 'package:watt/pages/home.dart';
 import 'package:watt/pages/notfications.dart';
 import 'package:watt/pages/profile.dart';
+import 'package:watt/pages/purchase.dart';
 import 'package:watt/styles/app_colors.dart';
 
 class MainPage extends StatefulWidget {
@@ -34,7 +35,7 @@ class _MainPageState extends State<MainPage> {
 
   final pages = [
     HomePage(),
-    Center(child: Text("Favorite")),
+    PurchasePage(),
     AddPage(),
     NotfPage(messageText: "Dean Is Amazing",),
     ProfilePage(),
@@ -77,7 +78,7 @@ class MyButtonNavigation extends StatelessWidget {
                 ),
                 Expanded(
                     child:ButtonNavigationItem(onPressed: ()=> onTap(Menus.favourites), 
-                    icon: AppIcons.favourites, 
+                    icon: AppIcons.purchase, 
                     current: currentIndex, 
                     page_name: Menus.favourites)
                     , ),

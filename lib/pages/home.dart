@@ -24,11 +24,12 @@ class _HomePageState extends State<HomePage> {
         child: ListView.separated(
           itemBuilder: (context, index) {
             mockSetup();
-           
+
             return DataDisplay(
               data: list[index].data,
               title: list[index].title,
               units: list[index].units,
+              amount: list[index].amount,
             );
           },
           separatorBuilder: (BuildContext context, int index) {
@@ -47,19 +48,21 @@ int count = 0;
 var list = [first, second, third, fourth, fifth];
 
 class Data {
-  void setData(String title, int data, String units) {
+  void setData( String title, int data, String units, int? amount) {
     this.title = title;
     this.data = data;
     this.units = units;
+    this.amount = amount;
   }
 
   String? title;
   int? data;
   String? units;
+  int? amount;
 }
 
 Data first = Data();
-Data second = Data();
+Data second = Data(); 
 Data third = Data();
 Data fourth = Data();
 Data fifth = Data();
@@ -71,10 +74,12 @@ void mockSetup() {
   }
 }
 
+
+
 void mockData() {
-  first.setData("Available Units", 0, "kWH");
-  second.setData("Last Purchase", 30, "kWH");
-  third.setData("Average Usage/Day", 45, "kWH");
-  fourth.setData("Estimated Remaining", 26, "hours");
-  fifth.setData("Last Purchase lasted", 14, "Days");
+  first.setData("Available Units", 0, "kWH", null);
+  second.setData("Last Purchase", 30, "kWH", 50);
+  third.setData("Average Usage/Day", 45, "kWH", null);
+  fourth.setData("Estimated Remaining", 26, "hours", null);
+  fifth.setData("Last Purchase lasted", 14, "Days", null);
 }
